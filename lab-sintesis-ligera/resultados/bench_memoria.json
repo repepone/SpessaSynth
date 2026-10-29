@@ -1,0 +1,616 @@
+{
+    "entorno": {
+        "chromium": "153.0.8010.12",
+        "node": "v22.22.0",
+        "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+        "nucleos": 4,
+        "ram_mb": 16091,
+        "fecha": "2026-10-29T20:46:05.968Z"
+    },
+    "descripcion": "Runtime.getHeapUsage (CDP) del documento tras GC, con el sintetizador vivo; RSS de cada proceso de Chromium leído de /proc. usedSize = montón JS; backingStorageSize = almacenamiento de ArrayBuffer/TypedArray (las muestras).",
+    "resultados": [
+        {
+            "caso": "página vacía (referencia)",
+            "heap": {
+                "usedSize": 3301508,
+                "totalSize": 6295552,
+                "embedderHeapUsedSize": 1384904,
+                "backingStorageSize": 3483833
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 15.99,
+                    "rss": 201105408
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5031,
+                    "cpu_s": 0.02,
+                    "rss": 73224192
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5010,
+                    "cpu_s": 0.15,
+                    "rss": 135876608
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5001,
+                    "cpu_s": 0.28,
+                    "rss": 141606912
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.64,
+                    "rss": 86392832
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 1.82,
+                    "rss": 117231616
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.21,
+                    "rss": 53161984
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "heap": {
+                "usedSize": 8976804,
+                "totalSize": 10190848,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 23929982
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 16.27,
+                    "rss": 202809344
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5071,
+                    "cpu_s": 0.01,
+                    "rss": 72974336
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5051,
+                    "cpu_s": 0.96,
+                    "rss": 189206528
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5042,
+                    "cpu_s": 0.28,
+                    "rss": 143589376
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.69,
+                    "rss": 87142400
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 1.85,
+                    "rss": 117280768
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.22,
+                    "rss": 53166080
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "heap": {
+                "usedSize": 8941964,
+                "totalSize": 9404416,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 47739029
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 16.62,
+                    "rss": 202838016
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5113,
+                    "cpu_s": 0.02,
+                    "rss": 73687040
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5093,
+                    "cpu_s": 0.79,
+                    "rss": 198524928
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5084,
+                    "cpu_s": 0.32,
+                    "rss": 143765504
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.75,
+                    "rss": 87138304
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 1.9,
+                    "rss": 117268480
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.22,
+                    "rss": 53170176
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "heap": {
+                "usedSize": 8376544,
+                "totalSize": 9404416,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 44489991
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 16.9,
+                    "rss": 201232384
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5157,
+                    "cpu_s": 0.01,
+                    "rss": 73125888
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5137,
+                    "cpu_s": 0.86,
+                    "rss": 198549504
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5128,
+                    "cpu_s": 0.29,
+                    "rss": 143470592
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.8,
+                    "rss": 86478848
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 1.94,
+                    "rss": 117268480
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.22,
+                    "rss": 53170176
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "heap": {
+                "usedSize": 8303472,
+                "totalSize": 9142272,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 16087599
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 17.19,
+                    "rss": 201277440
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5201,
+                    "cpu_s": 0.01,
+                    "rss": 73101312
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5180,
+                    "cpu_s": 0.65,
+                    "rss": 177061888
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5171,
+                    "cpu_s": 0.28,
+                    "rss": 143679488
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.84,
+                    "rss": 86515712
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 1.97,
+                    "rss": 117276672
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.23,
+                    "rss": 53170176
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS recortado (sf3)",
+            "heap": {
+                "usedSize": 6862428,
+                "totalSize": 7569408,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 16554465
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 17.49,
+                    "rss": 201367552
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5242,
+                    "cpu_s": 0.01,
+                    "rss": 72953856
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5222,
+                    "cpu_s": 0.75,
+                    "rss": 166666240
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5213,
+                    "cpu_s": 0.32,
+                    "rss": 143753216
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.89,
+                    "rss": 86511616
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 1.99,
+                    "rss": 117276672
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.24,
+                    "rss": 53174272
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "heap": {
+                "usedSize": 8687904,
+                "totalSize": 9404416,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 21844366
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 17.78,
+                    "rss": 202182656
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5287,
+                    "cpu_s": 0.01,
+                    "rss": 73076736
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5265,
+                    "cpu_s": 0.86,
+                    "rss": 186671104
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5257,
+                    "cpu_s": 0.3,
+                    "rss": 143593472
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.94,
+                    "rss": 86958080
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 2.03,
+                    "rss": 117276672
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.24,
+                    "rss": 53182464
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "heap": {
+                "usedSize": 8661420,
+                "totalSize": 9142272,
+                "embedderHeapUsedSize": 330120,
+                "backingStorageSize": 45653413
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 18.08,
+                    "rss": 201326592
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5329,
+                    "cpu_s": 0.02,
+                    "rss": 73162752
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5308,
+                    "cpu_s": 0.75,
+                    "rss": 196812800
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5299,
+                    "cpu_s": 0.33,
+                    "rss": 143667200
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 2.99,
+                    "rss": 86372352
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 2.07,
+                    "rss": 117276672
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.24,
+                    "rss": 53194752
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "heap": {
+                "usedSize": 8130372,
+                "totalSize": 8880128,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 39100615
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 18.42,
+                    "rss": 203419648
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5369,
+                    "cpu_s": 0.02,
+                    "rss": 73146368
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5349,
+                    "cpu_s": 1.05,
+                    "rss": 191725568
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5341,
+                    "cpu_s": 0.36,
+                    "rss": 144003072
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 3.05,
+                    "rss": 87207936
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 2.12,
+                    "rss": 117280768
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.25,
+                    "rss": 53194752
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "heap": {
+                "usedSize": 7991276,
+                "totalSize": 8617984,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 14433367
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 18.75,
+                    "rss": 201449472
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5415,
+                    "cpu_s": 0.01,
+                    "rss": 73244672
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5394,
+                    "cpu_s": 0.64,
+                    "rss": 171802624
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5385,
+                    "cpu_s": 0.33,
+                    "rss": 143822848
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 3.1,
+                    "rss": 86364160
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 2.15,
+                    "rss": 117313536
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.25,
+                    "rss": 53194752
+                }
+            ]
+        },
+        {
+            "caso": "núcleo cargado + precarga + 5 s de render",
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUserGS recortado (sf3)",
+            "heap": {
+                "usedSize": 6477156,
+                "totalSize": 7045120,
+                "embedderHeapUsedSize": 329416,
+                "backingStorageSize": 14267558
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_s": 19.06,
+                    "rss": 202948608
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5458,
+                    "cpu_s": 0.01,
+                    "rss": 73105408
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5437,
+                    "cpu_s": 0.71,
+                    "rss": 164069376
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5428,
+                    "cpu_s": 0.34,
+                    "rss": 143749120
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_s": 3.15,
+                    "rss": 87044096
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_s": 2.18,
+                    "rss": 117280768
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_s": 0.25,
+                    "rss": 53198848
+                }
+            ]
+        }
+    ]
+}

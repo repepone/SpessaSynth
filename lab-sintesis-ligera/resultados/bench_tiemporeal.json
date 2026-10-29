@@ -1,0 +1,677 @@
+{
+    "entorno": {
+        "chromium": "153.0.8010.12",
+        "node": "v22.22.0",
+        "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+        "nucleos": 4,
+        "ram_mb": 16091,
+        "fecha": "2026-10-29T20:46:05.968Z"
+    },
+    "descripcion": "AudioContext real (dispositivo de audio falso de Chromium headless), WorkletSynthesizer + Sequencer reproduciendo 30 s. CPU por proceso = Δ cpuTime (SystemInfo.getProcessInfo) / tiempo de pared, en % de un núcleo.",
+    "resultados": [
+        {
+            "caso": "página sin audio (referencia)",
+            "soundfont": null,
+            "midi": null,
+            "segundos": 30.004320253000014,
+            "inicio": null,
+            "fin": null,
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.3666138711774381,
+                    "rss": 199487488
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5503,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 73920512
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5482,
+                    "cpu_pct_un_nucleo": 0.06665706748680733,
+                    "rss": 138153984
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5473,
+                    "cpu_pct_un_nucleo": 0.23329973620382527,
+                    "rss": 141774848
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0.13331413497361466,
+                    "rss": 85811200
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 117534720
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54480896
+                }
+            ]
+        },
+        {
+            "caso": "AudioContext + worklet sin notas (referencia)",
+            "soundfont": null,
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "segundos": 30.01511973399995,
+            "inicio": {
+                "ms_carga_soundfont": 129.089999999851,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.43265306122449,
+                "voces_max": 0,
+                "voces_media": 0,
+                "seq_tiempo": 0.3734375
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.16658271045762021,
+                    "rss": 200232960
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5578,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 72953856
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5555,
+                    "cpu_pct_un_nucleo": 5.797078323925511,
+                    "rss": 199221248
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5548,
+                    "cpu_pct_un_nucleo": 0.13326616836610386,
+                    "rss": 140709888
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0.0333165420915267,
+                    "rss": 85893120
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 117714944
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0.033316542091525965,
+                    "rss": 54509568
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.632510562484771,
+                    "rss": 93655040
+                }
+            ]
+        },
+        {
+            "caso": "orquestal",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "segundos": 30.008807946000015,
+            "inicio": {
+                "ms_carga_soundfont": 130.2399999999907,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.35138321995465,
+                "voces_max": 45,
+                "voces_media": 19.373333333333335,
+                "seq_tiempo": 30.50423115079365
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.13329419839661075,
+                    "rss": 200814592
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5662,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 72953856
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5640,
+                    "cpu_pct_un_nucleo": 8.564152246982422,
+                    "rss": 201777152
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5633,
+                    "cpu_pct_un_nucleo": 0.16661774799576695,
+                    "rss": 140767232
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 85913600
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0.033323549599154165,
+                    "rss": 117710848
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54509568
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.5662068311602095,
+                    "rss": 94097408
+                }
+            ]
+        },
+        {
+            "caso": "orquestal",
+            "soundfont": "GeneralUserGS recortado (sf3)",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "segundos": 30.007419172000024,
+            "inicio": {
+                "ms_carga_soundfont": 33.89500000001863,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.24108843537415,
+                "voces_max": 48,
+                "voces_media": 19.4,
+                "seq_tiempo": 30.451986252834466
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.13330036738821985,
+                    "rss": 200605696
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5739,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 72929280
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5718,
+                    "cpu_pct_un_nucleo": 8.197972594375695,
+                    "rss": 181096448
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5709,
+                    "cpu_pct_un_nucleo": 0.16662545923527833,
+                    "rss": 140656640
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 85884928
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0.03332509184705644,
+                    "rss": 117612544
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54456320
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.6329295005057278,
+                    "rss": 94126080
+                }
+            ]
+        },
+        {
+            "caso": "orquestal",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "segundos": 30.010150836999994,
+            "inicio": {
+                "ms_carga_soundfont": 193.410000000149,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.37170068027211,
+                "voces_max": 38,
+                "voces_media": 17.023333333333333,
+                "seq_tiempo": 30.463596230158732
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.09996617532161853,
+                    "rss": 200642560
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5812,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 72970240
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5791,
+                    "cpu_pct_un_nucleo": 8.397158727016633,
+                    "rss": 210706432
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5782,
+                    "cpu_pct_un_nucleo": 0.1332882337621689,
+                    "rss": 140558336
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0.033322058440542965,
+                    "rss": 85860352
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0.03332205844054148,
+                    "rss": 117624832
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54464512
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.4661705713838562,
+                    "rss": 94126080
+                }
+            ]
+        },
+        {
+            "caso": "orquestal",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "segundos": 30.009809439999984,
+            "inicio": {
+                "ms_carga_soundfont": 94.27000000001863,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.081451247165532,
+                "voces_max": 39,
+                "voces_media": 19.183333333333334,
+                "seq_tiempo": 30.22268920068027
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.1666121875914209,
+                    "rss": 200642560
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5886,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 72949760
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5865,
+                    "cpu_pct_un_nucleo": 8.463899129644062,
+                    "rss": 186114048
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5856,
+                    "cpu_pct_un_nucleo": 0.13328975007313476,
+                    "rss": 141074432
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0.033322437518282996,
+                    "rss": 85909504
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 117616640
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54456320
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.5328321258410504,
+                    "rss": 94126080
+                }
+            ]
+        },
+        {
+            "caso": "orquestal sin efectos + lineal",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "segundos": 30.037810987000004,
+            "inicio": {
+                "ms_carga_soundfont": 124.54000000003725,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.39201814058957,
+                "voces_max": 49,
+                "voces_media": 19.393333333333334,
+                "seq_tiempo": 30.492621173469388
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.09987412202901459,
+                    "rss": 200581120
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5963,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 72962048
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5942,
+                    "cpu_pct_un_nucleo": 7.523850526185482,
+                    "rss": 201105408
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 5933,
+                    "cpu_pct_un_nucleo": 0.16645687004835133,
+                    "rss": 140779520
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 85893120
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0.03329137400966956,
+                    "rss": 117616640
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54468608
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.6645687004835135,
+                    "rss": 94126080
+                }
+            ]
+        },
+        {
+            "caso": "cámara",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "segundos": 30.012209356000064,
+            "inicio": {
+                "ms_carga_soundfont": 119.68999999994412,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.30204081632653,
+                "voces_max": 27,
+                "voces_media": 10.91,
+                "seq_tiempo": 30.049523809523812
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.09995931870308479,
+                    "rss": 200720384
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6039,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 73396224
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6019,
+                    "cpu_pct_un_nucleo": 7.396989584027995,
+                    "rss": 199864320
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6010,
+                    "cpu_pct_un_nucleo": 0.19991863740616203,
+                    "rss": 140488704
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0.03331977290102629,
+                    "rss": 85839872
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0.03331977290102629,
+                    "rss": 117624832
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54460416
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.5660293263482683,
+                    "rss": 94191616
+                }
+            ]
+        },
+        {
+            "caso": "cámara",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "segundos": 30.013287506000022,
+            "inicio": {
+                "ms_carga_soundfont": 259.679999999702,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.380408163265304,
+                "voces_max": 24,
+                "voces_media": 10.38,
+                "seq_tiempo": 30.037913832199546
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.13327430389624148,
+                    "rss": 200581120
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6128,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 73007104
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6105,
+                    "cpu_pct_un_nucleo": 7.596635322085928,
+                    "rss": 203460608
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6098,
+                    "cpu_pct_un_nucleo": 0.13327430389624445,
+                    "rss": 140587008
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 85786624
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 117641216
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54464512
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.5992916467549319,
+                    "rss": 94191616
+                }
+            ]
+        },
+        {
+            "caso": "estrés sintético",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "midi": "estres_tutti_sintetico.mid",
+            "segundos": 30.00903351899993,
+            "inicio": {
+                "ms_carga_soundfont": 133.65000000037253,
+                "estado_ctx": "running",
+                "baseLatency": 0.01,
+                "outputLatency": 0.032
+            },
+            "fin": {
+                "tiempo_ctx": 30.412335600907028,
+                "voces_max": 350,
+                "voces_media": 343.59,
+                "seq_tiempo": 30.139501133786847
+            },
+            "procesos": [
+                {
+                    "tipo": "browser",
+                    "pid": 2610,
+                    "cpu_pct_un_nucleo": 0.16661649555739172,
+                    "rss": 200720384
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6225,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 72957952
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6204,
+                    "cpu_pct_un_nucleo": 29.557766311880865,
+                    "rss": 203132928
+                },
+                {
+                    "tipo": "renderer",
+                    "pid": 6195,
+                    "cpu_pct_un_nucleo": 0.1666164955573893,
+                    "rss": 140627968
+                },
+                {
+                    "tipo": "GPU",
+                    "pid": 2637,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 85868544
+                },
+                {
+                    "tipo": "network.mojom.NetworkService",
+                    "pid": 2640,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 117633024
+                },
+                {
+                    "tipo": "storage.mojom.StorageService",
+                    "pid": 2652,
+                    "cpu_pct_un_nucleo": 0,
+                    "rss": 54456320
+                },
+                {
+                    "tipo": "audio.mojom.AudioService",
+                    "pid": 5589,
+                    "cpu_pct_un_nucleo": 1.699488254685372,
+                    "rss": 94191616
+                }
+            ]
+        }
+    ]
+}

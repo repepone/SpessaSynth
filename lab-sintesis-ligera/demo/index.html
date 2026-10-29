@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Síntesis ligera: demo</title>
+        <script type="importmap">
+            {
+                "imports": {
+                    "spessasynth_lib": "/node_modules/spessasynth_lib/dist/index.js",
+                    "spessasynth_core": "/node_modules/spessasynth_core/dist/index.js",
+                    "fflate": "/node_modules/fflate/esm/browser.js",
+                    "stb-vorbis": "/node_modules/stb-vorbis/dist/index.js"
+                }
+            }
+        </script>
+        <style>
+            :root {
+                --fg: #1d1d1f;
+                --bg: #fafaf7;
+                --mute: #6b6b70;
+                --acc: #2f5d8a;
+                --line: #d9d9d4;
+            }
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --fg: #ececec;
+                    --bg: #17181a;
+                    --mute: #9a9aa0;
+                    --acc: #7fb0e0;
+                    --line: #333;
+                }
+            }
+            body {
+                font:
+                    15px/1.5 system-ui,
+                    sans-serif;
+                color: var(--fg);
+                background: var(--bg);
+                max-width: 760px;
+                margin: 2rem auto;
+                padding: 0 16px;
+            }
+            h1 {
+                font-size: 1.3rem;
+                margin-bottom: 0.2rem;
+            }
+            p.sub {
+                color: var(--mute);
+                margin-top: 0;
+            }
+            fieldset {
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                margin: 1rem 0;
+                padding: 0.6rem 1rem 1rem;
+            }
+            legend {
+                color: var(--mute);
+                padding: 0 0.4rem;
+            }
+            label {
+                display: block;
+                margin: 0.4rem 0;
+            }
+            select,
+            input[type="file"] {
+                max-width: 100%;
+            }
+            button {
+                font: inherit;
+                padding: 0.35rem 0.9rem;
+                border-radius: 6px;
+                border: 1px solid var(--line);
+                background: transparent;
+                color: var(--fg);
+                cursor: pointer;
+            }
+            button:disabled {
+                opacity: 0.4;
+                cursor: default;
+            }
+            #bar {
+                position: relative;
+                height: 34px;
+                background: var(--line);
+                border-radius: 6px;
+                cursor: pointer;
+                margin: 0.8rem 0;
+            }
+            #viewerHead,
+            #audioHead {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+            }
+            #viewerHead {
+                background: var(--acc);
+            }
+            #audioHead {
+                background: #c0392b;
+                top: 50%;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 0.3rem 1rem;
+                font-variant-numeric: tabular-nums;
+            }
+            .grid div span {
+                color: var(--mute);
+                display: block;
+                font-size: 0.8rem;
+            }
+            small {
+                color: var(--mute);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Síntesis ligera para el visor de partituras</h1>
+        <p class="sub">
+            spessasynth_lib en un AudioWorklet. La barra simula la línea de
+            tiempo del visor (reloj propio, en azul); en rojo, lo que está
+            sonando.
+        </p>
+
+        <fieldset>
+            <legend>Material</legend>
+            <label
+                >Soundfont
+                <select id="sfSel">
+                    <option
+                        value="/lab-sintesis-ligera/.cache/soundfonts/GeneralUserGS.sf3"
+                    >
+                        GeneralUserGS.sf3 (8,4 MB, el del repo)
+                    </option>
+                    <option
+                        value="/lab-sintesis-ligera/.cache/recortes/GeneralUserGS__orquestal_bach_bwv248_64.sf3"
+                    >
+                        GeneralUserGS recortado para el Bach (sf3)
+                    </option>
+                    <option
+                        value="/lab-sintesis-ligera/.cache/recortes/GeneralUserGS__camara_beethoven_op18n1_i.sf3"
+                    >
+                        GeneralUserGS recortado para el Beethoven (sf3)
+                    </option>
+                    <option
+                        value="/lab-sintesis-ligera/.cache/soundfonts/FluidR3Mono_GM.sf3"
+                    >
+                        FluidR3Mono_GM.sf3 (23,7 MB)
+                    </option>
+                    <option
+                        value="/lab-sintesis-ligera/.cache/soundfonts/TimGM6mb.sf2"
+                    >
+                        TimGM6mb.sf2 (6 MB)
+                    </option>
+                    <option
+                        value="/lab-sintesis-ligera/.cache/soundfonts/GeneralUser-GS.sf2"
+                    >
+                        GeneralUser-GS.sf2 (32 MB, sin comprimir)
+                    </option>
+                </select>
+            </label>
+            <label
+                >…o un fichero propio (.sf2/.sf3/.dls)
+                <input type="file" id="sfFile" accept=".sf2,.sf3,.dls"
+            /></label>
+            <label
+                >MIDI
+                <select id="midSel">
+                    <option
+                        value="/lab-sintesis-ligera/midi/orquestal_bach_bwv248_64.mid"
+                    >
+                        Bach, BWV 248/64 (orquestal)
+                    </option>
+                    <option
+                        value="/lab-sintesis-ligera/midi/camara_beethoven_op18n1_i.mid"
+                    >
+                        Beethoven, op. 18 nº 1, I (cuarteto)
+                    </option>
+                    <option value="/lab-sintesis-ligera/midi/metronomo_120.mid">
+                        Metrónomo (prueba de sincronía)
+                    </option>
+                </select>
+            </label>
+            <label
+                >…o un fichero propio (.mid)
+                <input type="file" id="midFile" accept=".mid,.midi,.rmi"
+            /></label>
+            <button id="load">Cargar</button> <small id="loadInfo"></small>
+        </fieldset>
+
+        <fieldset>
+            <legend>Visor</legend>
+            <label
+                >Sincronía
+                <select id="mode">
+                    <option value="audio">
+                        El audio manda: el visor lee el tiempo del secuenciador
+                    </option>
+                    <option value="externo">
+                        Reloj del visor manda: el audio lo sigue (corrección de
+                        deriva)
+                    </option>
+                </select>
+            </label>
+            <label
+                >Velocidad del visor: <b id="rateOut">1.00</b>×
+                <input
+                    type="range"
+                    id="rate"
+                    min="0.5"
+                    max="1.5"
+                    step="0.05"
+                    value="1"
+                    style="width: 100%"
+                />
+            </label>
+            <button id="play" disabled>▶ Tocar</button>
+            <button id="pause" disabled>❚❚ Pausa</button>
+            <label
+                ><input type="checkbox" id="fx" checked /> Efectos
+                (reverb/chorus)</label
+            >
+            <label
+                ><input type="checkbox" id="lin" /> Interpolación lineal (más
+                barata que hermite)</label
+            >
+            <div id="bar" title="Clic para saltar">
+                <div id="viewerHead"></div>
+                <div id="audioHead"></div>
+            </div>
+            <div class="grid">
+                <div><span>Visor (s)</span><b id="vT">0.000</b></div>
+                <div><span>Sonando (s)</span><b id="aT">0.000</b></div>
+                <div><span>Diferencia (ms)</span><b id="dT">—</b></div>
+                <div><span>Voces</span><b id="voices">0</b></div>
+                <div><span>Latencia salida (ms)</span><b id="lat">—</b></div>
+                <div><span>Saltos de corrección</span><b id="seeks">0</b></div>
+            </div>
+            <p>
+                <small
+                    >«Sonando» = tiempo del secuenciador menos la latencia de
+                    salida del AudioContext. En modo «reloj del visor manda», la
+                    diferencia debería quedarse acotada; en «el audio manda» es
+                    cero por construcción y lo que importa es que el visor
+                    dibuje ese tiempo.</small
+                >
+            </p>
+        </fieldset>
+
+        <script type="module" src="./demo.js"></script>
+    </body>
+</html>

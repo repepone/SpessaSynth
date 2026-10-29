@@ -1,0 +1,181 @@
+{
+    "entorno": {
+        "chromium": "153.0.8010.12",
+        "node": "v22.22.0",
+        "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+        "nucleos": 4,
+        "ram_mb": 16091,
+        "fecha": "2026-10-29T20:46:05.968Z"
+    },
+    "descripcion": "Render completo con WorkletSynthesizer en OfflineAudioContext (efectos activos, interpolación hermite, voces ilimitadas)",
+    "resultados": [
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "segundos_audio": 204.9984375,
+            "ms_preparacion": 306.4849999998696,
+            "ms_render": 5610.969999999972,
+            "veces_tiempo_real": 36.53529380837912,
+            "nivel": {
+                "pico": 0.4410189688205719,
+                "rms": 0.06182509956825173
+            }
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "segundos_audio": 204.9984375,
+            "ms_preparacion": 212.82500000018626,
+            "ms_render": 5559.60999999987,
+            "veces_tiempo_real": 36.87280897401163,
+            "nivel": {
+                "pico": 0.44117113947868347,
+                "rms": 0.061707605332526685
+            }
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "segundos_audio": 204.9984375,
+            "ms_preparacion": 324.17499999981374,
+            "ms_render": 4829.110000000102,
+            "veces_tiempo_real": 42.45056283662945,
+            "nivel": {
+                "pico": 0.4688813090324402,
+                "rms": 0.05975432174729486
+            }
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "segundos_audio": 204.9984375,
+            "ms_preparacion": 216.4899999999907,
+            "ms_render": 5655.965000000084,
+            "veces_tiempo_real": 36.24464392901953,
+            "nivel": {
+                "pico": 0.517551839351654,
+                "rms": 0.08405986096792394
+            }
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS recortado (sf3)",
+            "segundos_audio": 204.9984375,
+            "ms_preparacion": 329.79000000003725,
+            "ms_render": 5332.125,
+            "veces_tiempo_real": 38.44591743441874,
+            "nivel": {
+                "pico": 0.4410189688205719,
+                "rms": 0.06182509956825173
+            }
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "segundos_audio": 336.0886757020833,
+            "ms_preparacion": 285.839999999851,
+            "ms_render": 7505.179999999935,
+            "veces_tiempo_real": 44.78089475563361,
+            "nivel": {
+                "pico": 0.8288854956626892,
+                "rms": 0.14358746544190934
+            }
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "segundos_audio": 336.0886757020833,
+            "ms_preparacion": 232.6950000000652,
+            "ms_render": 7481.254999999888,
+            "veces_tiempo_real": 44.92410373688483,
+            "nivel": {
+                "pico": 0.8228904604911804,
+                "rms": 0.14286660707097815
+            }
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "segundos_audio": 336.0886757020833,
+            "ms_preparacion": 357.6350000000093,
+            "ms_render": 6935.619999999879,
+            "veces_tiempo_real": 48.45834629089961,
+            "nivel": {
+                "pico": 0.5538358092308044,
+                "rms": 0.10558778656376641
+            }
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "segundos_audio": 336.0886757020833,
+            "ms_preparacion": 207.29500000015832,
+            "ms_render": 7349.894999999786,
+            "veces_tiempo_real": 45.72700367856862,
+            "nivel": {
+                "pico": 0.8875907063484192,
+                "rms": 0.15575783403896715
+            }
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUserGS recortado (sf3)",
+            "segundos_audio": 336.0886757020833,
+            "ms_preparacion": 274.3550000002142,
+            "ms_render": 7776.049999999814,
+            "veces_tiempo_real": 43.221002398658875,
+            "nivel": {
+                "pico": 0.8288854956626892,
+                "rms": 0.14358746544190934
+            }
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "segundos_audio": 61.748958333333334,
+            "ms_preparacion": 389.60000000009313,
+            "ms_render": 16015.669999999925,
+            "veces_tiempo_real": 3.8555338823373373,
+            "nivel": {
+                "pico": 1.4951306581497192,
+                "rms": 0.36833636931433544
+            }
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "segundos_audio": 61.748958333333334,
+            "ms_preparacion": 298.2050000000745,
+            "ms_render": 15487,
+            "veces_tiempo_real": 3.987147822905232,
+            "nivel": {
+                "pico": 1.5054939985275269,
+                "rms": 0.3682191327547974
+            }
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "segundos_audio": 61.748958333333334,
+            "ms_preparacion": 378.5100000000093,
+            "ms_render": 9883.854999999981,
+            "veces_tiempo_real": 6.247456921751023,
+            "nivel": {
+                "pico": 1.5906072854995728,
+                "rms": 0.42165631100224177
+            }
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "segundos_audio": 61.748958333333334,
+            "ms_preparacion": 306.1450000000186,
+            "ms_render": 15809.314999999944,
+            "veces_tiempo_real": 3.9058591933511067,
+            "nivel": {
+                "pico": 2.1879894733428955,
+                "rms": 0.5642329287700419
+            }
+        }
+    ]
+}

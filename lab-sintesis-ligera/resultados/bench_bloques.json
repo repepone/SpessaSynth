@@ -1,0 +1,1183 @@
+{
+    "entorno": {
+        "chromium": "153.0.8010.12",
+        "node": "v22.22.0",
+        "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+        "nucleos": 4,
+        "ram_mb": 16091,
+        "fecha": "2026-10-29T20:46:05.968Z"
+    },
+    "descripcion": "spessasynth_core en el hilo principal de la página, bloques de 128 muestras a 44,1 kHz, cronometrando cada bloque (performance.now con crossOriginIsolated). interpolation: 0=lineal, 2=hermite.",
+    "resultados": [
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 43.93999999994412,
+            "ms_carga_y_precarga": 181.8649999999907,
+            "ms_render_total": 3993.9599999999627,
+            "veces_tiempo_real": 51.3271133161078,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.05625217686782466,
+                "p50": 0.05000000004656613,
+                "p95": 0.11999999987892807,
+                "p99": 0.1699999999254942,
+                "p999": 0.4050000000279397,
+                "max": 2.6899999999441206
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.05592144583132193,
+                "p50": 0.05000000004656613,
+                "p95": 0.11499999999068677,
+                "p99": 0.1650000000372529,
+                "p999": 0.3449999999720603,
+                "max": 2.5549999999348074
+            },
+            "bloques_sobre_presupuesto": 0,
+            "pct_bloques_sobre_presupuesto": 0,
+            "carga_media_pct": 1.9380632811492715,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 59.20999999996275,
+            "ms_carga_y_precarga": 65.42500000004657,
+            "ms_render_total": 3795.3249999999534,
+            "veces_tiempo_real": 54.013407942666966,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.053458140423896225,
+                "p50": 0.04500000015832484,
+                "p95": 0.10499999998137355,
+                "p99": 0.15499999979510903,
+                "p999": 0.4050000000279397,
+                "max": 2.574999999953434
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.05310727920045635,
+                "p50": 0.04500000015832484,
+                "p95": 0.10000000009313226,
+                "p99": 0.14999999990686774,
+                "p999": 0.35999999986961484,
+                "max": 2.2250000000931323
+            },
+            "bloques_sobre_presupuesto": 0,
+            "pct_bloques_sobre_presupuesto": 0,
+            "carga_media_pct": 1.8417999942920495,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 72.6699999999255,
+            "ms_carga_y_precarga": 195.84499999997206,
+            "ms_render_total": 3089.0049999998882,
+            "veces_tiempo_real": 66.36390601504608,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.04347137861220247,
+                "p50": 0.0400000000372529,
+                "p95": 0.0800000000745058,
+                "p99": 0.12000000011175871,
+                "p999": 0.3200000000651926,
+                "max": 2.7649999998975545
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.04306374126026051,
+                "p50": 0.0400000000372529,
+                "p95": 0.07999999984167516,
+                "p99": 0.11999999987892807,
+                "p999": 0.27000000001862645,
+                "max": 2.7649999998975545
+            },
+            "bloques_sobre_presupuesto": 0,
+            "pct_bloques_sobre_presupuesto": 0,
+            "carga_media_pct": 1.4977248412485382,
+            "voces_max": 46,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 46.70999999996275,
+            "ms_carga_y_precarga": 78.78500000014901,
+            "ms_render_total": 3585.159999999916,
+            "veces_tiempo_real": 57.17971792054045,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.05047855696663233,
+                "p50": 0.044999999925494194,
+                "p95": 0.09000000008381903,
+                "p99": 0.14999999990686774,
+                "p999": 0.5400000000372529,
+                "max": 3.574999999953434
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.04976064856510112,
+                "p50": 0.044999999925494194,
+                "p95": 0.09000000008381903,
+                "p99": 0.13500000000931323,
+                "p999": 0.46500000008381903,
+                "max": 3.055000000167638
+            },
+            "bloques_sobre_presupuesto": 2,
+            "pct_bloques_sobre_presupuesto": 0.0028316980277223237,
+            "carga_media_pct": 1.7391440329910046,
+            "voces_max": 67,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS recortado (sf3)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 17.03499999991618,
+            "ms_carga_y_precarga": 171.29000000003725,
+            "ms_render_total": 3863.655000000028,
+            "veces_tiempo_real": 53.05816319003599,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.0543873621317148,
+                "p50": 0.04500000015832484,
+                "p95": 0.10499999998137355,
+                "p99": 0.1650000000372529,
+                "p999": 0.4199999999254942,
+                "max": 2.824999999953434
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.053900756373439614,
+                "p50": 0.04500000015832484,
+                "p95": 0.10499999998137355,
+                "p99": 0.1600000001490116,
+                "p999": 0.3649999999906868,
+                "max": 2.3799999998882413
+            },
+            "bloques_sobre_presupuesto": 0,
+            "pct_bloques_sobre_presupuesto": 0,
+            "carga_media_pct": 1.8738145859442366,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 336.0886757020833,
+            "ms_parse_soundfont": 42.63500000000931,
+            "ms_carga_y_precarga": 147.8649999999907,
+            "ms_render_total": 4769.175000000047,
+            "veces_tiempo_real": 70.47103025199957,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 115794,
+                "media": 0.04091727550657009,
+                "p50": 0.03500000014901161,
+                "p95": 0.07000000006519258,
+                "p99": 0.10499999998137355,
+                "p999": 0.2249999998603016,
+                "max": 4.114999999990687
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 115104,
+                "media": 0.04061157735619427,
+                "p50": 0.03500000014901161,
+                "p95": 0.06999999983236194,
+                "p99": 0.10000000009313226,
+                "p999": 0.1849999998230487,
+                "max": 1.9250000000465661
+            },
+            "bloques_sobre_presupuesto": 1,
+            "pct_bloques_sobre_presupuesto": 0.0008636026046254556,
+            "carga_media_pct": 1.4097280076872976,
+            "voces_max": 53,
+            "aislado": true
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 336.0886757020833,
+            "ms_parse_soundfont": 57.734999999869615,
+            "ms_carga_y_precarga": 59.800000000046566,
+            "ms_render_total": 5148.570000000065,
+            "veces_tiempo_real": 65.27806278288516,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 115794,
+                "media": 0.0441576851995751,
+                "p50": 0.03999999980442226,
+                "p95": 0.07499999995343387,
+                "p99": 0.11000000010244548,
+                "p999": 0.28499999991618097,
+                "max": 75.10000000009313
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 115104,
+                "media": 0.04392210522658062,
+                "p50": 0.03999999980442226,
+                "p95": 0.07499999995343387,
+                "p99": 0.10999999986961484,
+                "p999": 0.22999999998137355,
+                "max": 75.10000000009313
+            },
+            "bloques_sobre_presupuesto": 6,
+            "pct_bloques_sobre_presupuesto": 0.005181615627752733,
+            "carga_media_pct": 1.521370247891611,
+            "voces_max": 53,
+            "aislado": true
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 336.0886757020833,
+            "ms_parse_soundfont": 69.56000000005588,
+            "ms_carga_y_precarga": 236.55999999982305,
+            "ms_render_total": 5032.149999999907,
+            "veces_tiempo_real": 66.78828645848981,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 115794,
+                "media": 0.043154481234070466,
+                "p50": 0.03500000014901161,
+                "p95": 0.07499999995343387,
+                "p99": 0.12000000011175871,
+                "p999": 0.4150000000372529,
+                "max": 7.7649999998975545
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 115104,
+                "media": 0.04254952043383327,
+                "p50": 0.03500000014901161,
+                "p95": 0.07499999995343387,
+                "p99": 0.11499999999068677,
+                "p999": 0.3349999999627471,
+                "max": 6.205000000074506
+            },
+            "bloques_sobre_presupuesto": 3,
+            "pct_bloques_sobre_presupuesto": 0.0025908078138763666,
+            "carga_media_pct": 1.4868067362675839,
+            "voces_max": 51,
+            "aislado": true
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 336.0886757020833,
+            "ms_parse_soundfont": 47.91500000003725,
+            "ms_carga_y_precarga": 53.39500000001863,
+            "ms_render_total": 5121.944999999832,
+            "veces_tiempo_real": 65.61739255343318,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 115794,
+                "media": 0.04395063647508519,
+                "p50": 0.0400000000372529,
+                "p95": 0.07000000006519258,
+                "p99": 0.10999999986961484,
+                "p999": 0.3499999998603016,
+                "max": 11.790000000037253
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 115104,
+                "media": 0.043681713928244756,
+                "p50": 0.0400000000372529,
+                "p95": 0.07000000006519258,
+                "p99": 0.10499999998137355,
+                "p999": 0.3049999999348074,
+                "max": 11.790000000037253
+            },
+            "bloques_sobre_presupuesto": 6,
+            "pct_bloques_sobre_presupuesto": 0.005181615627752733,
+            "carga_media_pct": 1.5142367723056696,
+            "voces_max": 37,
+            "aislado": true
+        },
+        {
+            "midi": "camara_beethoven_op18n1_i.mid",
+            "soundfont": "GeneralUserGS recortado (sf3)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 336.0886757020833,
+            "ms_parse_soundfont": 21.205000000074506,
+            "ms_carga_y_precarga": 157.10499999998137,
+            "ms_render_total": 4832.739999999991,
+            "veces_tiempo_real": 69.54412521718197,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 115794,
+                "media": 0.04146337461356767,
+                "p50": 0.03500000014901161,
+                "p95": 0.06999999983236194,
+                "p99": 0.10000000009313226,
+                "p999": 0.30000000004656613,
+                "max": 5.739999999990687
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 115104,
+                "media": 0.041158256880772216,
+                "p50": 0.03500000014901161,
+                "p95": 0.06500000017695129,
+                "p99": 0.09999999986030161,
+                "p999": 0.23999999999068677,
+                "max": 5.739999999990687
+            },
+            "bloques_sobre_presupuesto": 6,
+            "pct_bloques_sobre_presupuesto": 0.005181615627752733,
+            "carga_media_pct": 1.4285428284830737,
+            "voces_max": 53,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 41.550000000046566,
+            "ms_carga_y_precarga": 158.46500000008382,
+            "ms_render_total": 9549.854999999981,
+            "veces_tiempo_real": 6.465957685570457,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.4482213866039695,
+                "p50": 0.4000000001396984,
+                "p95": 0.6950000000651926,
+                "p99": 1.084999999962747,
+                "p999": 3.1299999998882413,
+                "max": 17.18999999994412
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.4408394461987191,
+                "p50": 0.4000000001396984,
+                "p95": 0.6700000001583248,
+                "p99": 1.005000000121072,
+                "p999": 2.5049999998882413,
+                "max": 5.779999999795109
+            },
+            "bloques_sobre_presupuesto": 26,
+            "pct_bloques_sobre_presupuesto": 0.12220916568742655,
+            "carga_media_pct": 15.442627460339885,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUser-GS.sf2 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 59.65999999991618,
+            "ms_carga_y_precarga": 79.97500000009313,
+            "ms_render_total": 9160.044999999925,
+            "veces_tiempo_real": 6.74111953962386,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.42997696827248955,
+                "p50": 0.39000000013038516,
+                "p95": 0.6699999999254942,
+                "p99": 0.9799999999813735,
+                "p999": 2.7350000001024455,
+                "max": 11.940000000176951
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.4252003886323184,
+                "p50": 0.39000000013038516,
+                "p95": 0.6649999998044223,
+                "p99": 0.9499999999534339,
+                "p999": 1.8950000000186265,
+                "max": 9.715000000083819
+            },
+            "bloques_sobre_presupuesto": 21,
+            "pct_bloques_sobre_presupuesto": 0.09870740305522914,
+            "carga_media_pct": 14.814050235013115,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "FluidR3Mono_GM.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 55.59000000008382,
+            "ms_carga_y_precarga": 177.8049999999348,
+            "ms_render_total": 8359,
+            "veces_tiempo_real": 7.387122662200423,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.39221269095157846,
+                "p50": 0.3600000001024455,
+                "p95": 0.5949999999720603,
+                "p99": 0.8349999999627471,
+                "p999": 2.0850000001955777,
+                "max": 14.625
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.39011756133082065,
+                "p50": 0.3600000001024455,
+                "p95": 0.590000000083819,
+                "p99": 0.8049999999348074,
+                "p999": 1.409999999916181,
+                "max": 7.0750000001862645
+            },
+            "bloques_sobre_presupuesto": 10,
+            "pct_bloques_sobre_presupuesto": 0.04700352526439483,
+            "carga_media_pct": 13.5129528679411,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "TimGM6mb.sf2 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 38.56500000017695,
+            "ms_carga_y_precarga": 84.91499999980442,
+            "ms_render_total": 9169.794999999925,
+            "veces_tiempo_real": 6.733951885874639,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.43047426556975754,
+                "p50": 0.3850000000093132,
+                "p95": 0.6649999998044223,
+                "p99": 0.9450000000651926,
+                "p999": 2.324999999953434,
+                "max": 13.78000000002794
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.42814719455890343,
+                "p50": 0.3850000000093132,
+                "p95": 0.6600000001490116,
+                "p99": 0.9250000000465661,
+                "p999": 1.6099999998696148,
+                "max": 5.564999999944121
+            },
+            "bloques_sobre_presupuesto": 15,
+            "pct_bloques_sobre_presupuesto": 0.07050528789659224,
+            "carga_media_pct": 14.831183680958052,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 40.39999999990687,
+            "ms_carga_y_precarga": 171.88000000012107,
+            "ms_render_total": 3083.1350000000093,
+            "veces_tiempo_real": 66.49025667056401,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.04335421710626062,
+                "p50": 0.03499999991618097,
+                "p95": 0.10000000009313226,
+                "p99": 0.1600000001490116,
+                "p999": 0.3799999998882413,
+                "max": 2.909999999916181
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.04311092523482101,
+                "p50": 0.03499999991618097,
+                "p95": 0.10000000009313226,
+                "p99": 0.15999999991618097,
+                "p999": 0.3399999998509884,
+                "max": 2.494999999878928
+            },
+            "bloques_sobre_presupuesto": 1,
+            "pct_bloques_sobre_presupuesto": 0.0014158490138611618,
+            "carga_media_pct": 1.4936882612391356,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 57.63500000000931,
+            "ms_carga_y_precarga": 255.4550000000745,
+            "ms_render_total": 3499.5449999999255,
+            "veces_tiempo_real": 58.57859736051526,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.049198063118408075,
+                "p50": 0.0400000000372529,
+                "p95": 0.09499999997206032,
+                "p99": 0.14999999990686774,
+                "p999": 0.4450000000651926,
+                "max": 5.875
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.048222951428973204,
+                "p50": 0.0400000000372529,
+                "p95": 0.09499999997206032,
+                "p99": 0.13999999989755452,
+                "p999": 0.3449999999720603,
+                "max": 4.359999999869615
+            },
+            "bloques_sobre_presupuesto": 7,
+            "pct_bloques_sobre_presupuesto": 0.009910943097028132,
+            "carga_media_pct": 1.6950270183764033,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 52.375,
+            "ms_carga_y_precarga": 197.5250000001397,
+            "ms_render_total": 2084.689999999944,
+            "veces_tiempo_real": 98.33521410857513,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.029258944626237765,
+                "p50": 0.025000000139698386,
+                "p95": 0.05499999993480742,
+                "p99": 0.08999999985098839,
+                "p999": 0.19999999995343387,
+                "max": 2.305000000167638
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.028920630835534596,
+                "p50": 0.025000000139698386,
+                "p95": 0.05499999993480742,
+                "p99": 0.0849999999627471,
+                "p999": 0.1699999999254942,
+                "max": 0.9850000001024455
+            },
+            "bloques_sobre_presupuesto": 0,
+            "pct_bloques_sobre_presupuesto": 0,
+            "carga_media_pct": 1.0080620765758481,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 64
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 41.31500000017695,
+            "ms_carga_y_precarga": 163.03999999980442,
+            "ms_render_total": 3693.875,
+            "veces_tiempo_real": 55.496852898379075,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.051976949977979574,
+                "p50": 0.044999999925494194,
+                "p95": 0.09499999997206032,
+                "p99": 0.1600000001490116,
+                "p999": 0.42000000015832484,
+                "max": 2.659999999916181
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.05153426557421798,
+                "p50": 0.044999999925494194,
+                "p95": 0.09499999997206032,
+                "p99": 0.15500000002793968,
+                "p999": 0.32499999995343387,
+                "max": 2.659999999916181
+            },
+            "bloques_sobre_presupuesto": 0,
+            "pct_bloques_sobre_presupuesto": 0,
+            "carga_media_pct": 1.7907683547100774,
+            "voces_max": 64,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 4,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 201.51499999989755,
+            "ms_carga_y_precarga": 636.410000000149,
+            "ms_render_total": 16875.409999999916,
+            "veces_tiempo_real": 12.147760409969358,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.23752014045232187,
+                "p50": 0.05999999982304871,
+                "p95": 0.9500000001862645,
+                "p99": 1.2600000000093132,
+                "p999": 3.0949999999720603,
+                "max": 21.84499999997206
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.23639521583101655,
+                "p50": 0.05999999982304871,
+                "p95": 0.9499999999534339,
+                "p99": 1.25,
+                "p999": 3.0700000000651926,
+                "max": 21.84499999997206
+            },
+            "bloques_sobre_presupuesto": 88,
+            "pct_bloques_sobre_presupuesto": 0.12459471321978224,
+            "carga_media_pct": 8.183311089021402,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 4,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 183.72500000009313,
+            "ms_carga_y_precarga": 691.375,
+            "ms_render_total": 10574.054999999935,
+            "veces_tiempo_real": 19.386927484300134,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.14843131008485755,
+                "p50": 0.030000000027939677,
+                "p95": 0.8350000001955777,
+                "p99": 1.159999999916181,
+                "p999": 2.824999999953434,
+                "max": 24.475000000093132
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.1476335092006299,
+                "p50": 0.030000000027939677,
+                "p95": 0.8349999999627471,
+                "p99": 1.1500000001396984,
+                "p999": 2.7700000000186265,
+                "max": 24.475000000093132
+            },
+            "bloques_sobre_presupuesto": 69,
+            "pct_bloques_sobre_presupuesto": 0.09769358195642017,
+            "carga_media_pct": 5.113922480267358,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 6,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 296.5299999997951,
+            "ms_carga_y_precarga": 1121.5900000000838,
+            "ms_render_total": 25506.274999999907,
+            "veces_tiempo_real": 8.037176635945498,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.35899602146428794,
+                "p50": 0.05500000016763806,
+                "p95": 1.5549999999348074,
+                "p99": 2.0999999998603016,
+                "p999": 5.150000000139698,
+                "max": 19.390000000130385
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.3577738457799268,
+                "p50": 0.05500000016763806,
+                "p95": 1.5500000000465661,
+                "p99": 2.0850000001955777,
+                "p999": 5.1049999999813735,
+                "max": 11.385000000009313
+            },
+            "bloques_sobre_presupuesto": 263,
+            "pct_bloques_sobre_presupuesto": 0.37236829064548554,
+            "carga_media_pct": 12.368534802011794,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "orquestal_bach_bwv248_64.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 6,
+            "segundos_audio": 204.9984375,
+            "ms_parse_soundfont": 239.19999999995343,
+            "ms_carga_y_precarga": 1014.6550000000279,
+            "ms_render_total": 15059.434999999823,
+            "veces_tiempo_real": 13.612624743225918,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 70629,
+                "media": 0.2113851958827414,
+                "p50": 0.030000000027939677,
+                "p95": 1.3399999998509884,
+                "p99": 1.9100000001490116,
+                "p999": 5.074999999953434,
+                "max": 23.084999999962747
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 69939,
+                "media": 0.21028260341157537,
+                "p50": 0.030000000027939677,
+                "p95": 1.334999999962747,
+                "p99": 1.9050000000279397,
+                "p999": 5.074999999953434,
+                "max": 14.260000000009313
+            },
+            "bloques_sobre_presupuesto": 189,
+            "pct_bloques_sobre_presupuesto": 0.2675954636197596,
+            "carga_media_pct": 7.282880576897575,
+            "voces_max": 68,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 55.39500000001863,
+            "ms_carga_y_precarga": 199.1149999999907,
+            "ms_render_total": 9095.619999999879,
+            "veces_tiempo_real": 6.788867425566828,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.42695534665113455,
+                "p50": 0.38000000012107193,
+                "p95": 0.654999999795109,
+                "p99": 0.965000000083819,
+                "p999": 3.005000000121072,
+                "max": 42.39999999990687
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.4238078698083145,
+                "p50": 0.38000000012107193,
+                "p95": 0.6500000001396984,
+                "p99": 0.9199999999254942,
+                "p999": 1.6849999998230487,
+                "max": 42.39999999990687
+            },
+            "bloques_sobre_presupuesto": 24,
+            "pct_bloques_sobre_presupuesto": 0.1128084606345476,
+            "carga_media_pct": 14.709945927589871,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 46.15500000002794,
+            "ms_carga_y_precarga": 162.0700000000652,
+            "ms_render_total": 7393.610000000102,
+            "veces_tiempo_real": 8.351665604938924,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.3468667450059888,
+                "p50": 0.3049999999348074,
+                "p95": 0.5500000000465661,
+                "p99": 0.8600000001024455,
+                "p999": 2.3200000000651926,
+                "max": 10.785000000149012
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.3410539227593346,
+                "p50": 0.3049999999348074,
+                "p95": 0.5449999999254942,
+                "p99": 0.840000000083819,
+                "p999": 1.4350000000558794,
+                "max": 4.4799999999813735
+            },
+            "bloques_sobre_presupuesto": 16,
+            "pct_bloques_sobre_presupuesto": 0.07520564042303172,
+            "carga_media_pct": 11.95064332403446,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 57.77000000001863,
+            "ms_carga_y_precarga": 158.71500000008382,
+            "ms_render_total": 6817.10999999987,
+            "veces_tiempo_real": 9.057937796710705,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.31984535840182365,
+                "p50": 0.2800000000279397,
+                "p95": 0.4899999999906868,
+                "p99": 0.8499999998603016,
+                "p999": 2.5999999998603016,
+                "max": 10.800000000046566
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.315529754675675,
+                "p50": 0.2800000000279397,
+                "p95": 0.48499999986961484,
+                "p99": 0.8200000000651926,
+                "p999": 1.494999999878928,
+                "max": 6.6100000001024455
+            },
+            "bloques_sobre_presupuesto": 19,
+            "pct_bloques_sobre_presupuesto": 0.08930669800235018,
+            "carga_media_pct": 11.01967211368783,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 64
+            },
+            "throttling_cpu": 1,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 58.07000000006519,
+            "ms_carga_y_precarga": 196.31499999994412,
+            "ms_render_total": 2184.6049999999814,
+            "veces_tiempo_real": 28.265502611837775,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 0.10228907168031912,
+                "p50": 0.0849999999627471,
+                "p95": 0.15500000002793968,
+                "p99": 0.38000000012107193,
+                "p999": 1.209999999962747,
+                "max": 11.28000000002794
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 0.09680374058783289,
+                "p50": 0.0849999999627471,
+                "p95": 0.13999999989755452,
+                "p99": 0.35999999986961484,
+                "p999": 0.7800000000279397,
+                "max": 1.7950000001583248
+            },
+            "bloques_sobre_presupuesto": 7,
+            "pct_bloques_sobre_presupuesto": 0.03290246768507638,
+            "carga_media_pct": 3.5241781727359944,
+            "voces_max": 64,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 4,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 178.81000000005588,
+            "ms_carga_y_precarga": 551.6299999998882,
+            "ms_render_total": 44642.54000000004,
+            "veces_tiempo_real": 1.3831864928235105,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 2.094102467685614,
+                "p50": 1.9749999998603016,
+                "p95": 3.734999999869615,
+                "p99": 5.010000000009313,
+                "p999": 8.899999999906868,
+                "max": 54.93999999994412
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 2.0879604080645784,
+                "p50": 1.9750000000931323,
+                "p95": 3.7299999999813735,
+                "p99": 4.914999999804422,
+                "p999": 8.295000000158325,
+                "max": 17.56499999994412
+            },
+            "bloques_sobre_presupuesto": 2721,
+            "pct_bloques_sobre_presupuesto": 12.789659224441833,
+            "carga_media_pct": 72.14837408198093,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 4,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 161.1799999999348,
+            "ms_carga_y_precarga": 553.9799999999814,
+            "ms_render_total": 29545.415000000037,
+            "veces_tiempo_real": 2.0899675409309113,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 1.3854881316097947,
+                "p50": 1.284999999916181,
+                "p95": 2.5700000000651926,
+                "p99": 3.955000000074506,
+                "p999": 7.3950000000186265,
+                "max": 52.015000000130385
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 1.3748768520765215,
+                "p50": 1.284999999916181,
+                "p95": 2.5599999998230487,
+                "p99": 3.8649999999906868,
+                "p999": 6.340000000083819,
+                "max": 22.5
+            },
+            "bloques_sobre_presupuesto": 691,
+            "pct_bloques_sobre_presupuesto": 3.2479435957696827,
+            "carga_media_pct": 47.73439578436871,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": true,
+                "interpolation": 2,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 6,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 240.64500000001863,
+            "ms_carga_y_precarga": 742.0900000000838,
+            "ms_render_total": 65540.47499999986,
+            "veces_tiempo_real": 0.942149997132817,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 3.0740756756756737,
+                "p50": 2.920000000158325,
+                "p95": 5.7700000000186265,
+                "p99": 8.21999999997206,
+                "p999": 14.429999999934807,
+                "max": 82.82000000006519
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 3.0607082827300496,
+                "p50": 2.9249999998137355,
+                "p95": 5.7350000001024455,
+                "p99": 8.06499999994412,
+                "p999": 12.984999999869615,
+                "max": 43.675000000046566
+            },
+            "bloques_sobre_presupuesto": 10829,
+            "pct_bloques_sobre_presupuesto": 50.90011750881316,
+            "carga_media_pct": 105.91151351351344,
+            "voces_max": 350,
+            "aislado": true
+        },
+        {
+            "midi": "estres_tutti_sintetico.mid",
+            "soundfont": "GeneralUserGS.sf3 (completo)",
+            "opciones": {
+                "effects": false,
+                "interpolation": 0,
+                "voiceCap": 350
+            },
+            "throttling_cpu": 6,
+            "segundos_audio": 61.748958333333334,
+            "ms_parse_soundfont": 396.8299999998417,
+            "ms_carga_y_precarga": 1286.3549999999814,
+            "ms_render_total": 48372,
+            "veces_tiempo_real": 1.276543420436065,
+            "presupuesto_bloque_ms": 2.9024943310657596,
+            "bloque_ms": {
+                "n": 21275,
+                "media": 2.266002585193138,
+                "p50": 2.0700000000651926,
+                "p95": 4.660000000149012,
+                "p99": 6.494999999878928,
+                "p999": 11.214999999850988,
+                "max": 99.56999999983236
+            },
+            "bloque_ms_sin_2s_iniciales": {
+                "n": 20585,
+                "media": 2.2514245810047813,
+                "p50": 2.069999999832362,
+                "p95": 4.659999999916181,
+                "p99": 6.334999999962747,
+                "p999": 10.085000000195578,
+                "max": 15.96999999997206
+            },
+            "bloques_sobre_presupuesto": 5091,
+            "pct_bloques_sobre_presupuesto": 23.92949471210341,
+            "carga_media_pct": 78.07087031798233,
+            "voces_max": 350,
+            "aislado": true
+        }
+    ]
+}
