@@ -1,3 +1,4 @@
 # Material descargado o generado: no se sube (licencias de terceros y peso)
 .cache/
 midi/
+__pycache__/
